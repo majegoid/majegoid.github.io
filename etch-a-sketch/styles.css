@@ -1,0 +1,23 @@
+body {
+    background-color: gray;
+    min-height: 100vh;
+}
+
+.squares {
+    /* height: 20rem;
+    width: 20rem; */
+    /* margin: auto; */
+    background-color: magenta;
+}
+
+.square-row {
+    display: flex;
+    flex-direction: row;
+    background-color: lime;
+}
+
+.square {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
