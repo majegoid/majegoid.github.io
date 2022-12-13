@@ -1,0 +1,207 @@
+:root {
+    --calculator-height: 30rem;
+    --calculator-width: 25rem;
+    --display-height: 5rem;
+    --buttons-flex-container-gap: 0.25rem;
+    --body-padding: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(var(--calculator-width) / 5);
+    
+    height: calc((var(--calculator-height) - var(--display-height) - 5*var(--buttons-flex-container-gap) - 2*var(--body-padding)) / 5);
+    border: 2px solid #ccc;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+
+    background-color: #ddd;
+    text-align: center;
+
+    /* Disable Selection of Text */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.button:hover {
+    border: 2px solid hsl(205, 100%, 50%);
+    
+    cursor: pointer;
+    background-color: hsl(205, 100%, 75%);
+}
+
+.button-white {
+    background-color: #fff;
+}
+
+.button-blue {
+    border: 2px solid #c00;
+    background-color: #f00;
+}
+
+.button-wide {
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: calc(var(--calculator-width) / 5 * 2)
+}
+
+#calculator-body {
+    position: relative;
+
+    height: var(--calculator-height);
+    width: var(--calculator-width);
+    padding: var(--body-padding);
+
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #bbb;
+}
+
+#result-display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    height: var(--display-height);
+    padding: 0.25rem;
+
+    text-align: right;
+    font-size: 1.9rem;
+    background-color: #999;
+}
+
+#expression-display {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    
+    font-size: 1rem;
+    color: #555;
+}
+
+#buttons-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--buttons-flex-container-gap);
+}
+
+
+/* #key-divide-by-100 {
+
+}
+
+#key-clear-entry {
+
+}
+
+#key-clear {
+
+}
+
+#key-divide {
+
+}
+
+
+#key-reciprocal {
+
+}
+
+#key-square {
+
+}
+
+#key-square-root {
+
+}
+
+#key-divide {
+
+}
+
+
+#key-7 {
+
+}
+
+#key-8 {
+
+}
+
+#key-9 {
+
+}
+
+#key-multiply {
+
+}
+
+
+#key-4 {
+
+}
+
+#key-5 {
+
+}
+
+#key-6 {
+
+}
+
+#key-subtract {
+
+}
+
+
+#key-1 {
+
+}
+
+#key-2 {
+
+}
+
+#key-3 {
+
+}
+
+#key-plus {
+
+}
+
+
+#key-flip-sign {
+
+}
+
+#key-0 {
+
+}
+
+#key-period {
+
+}
+
+#key-equals {
+
+} */
