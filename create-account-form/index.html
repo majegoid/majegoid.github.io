@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <aside>
+        <div class="logo-container">
+          <img src="./assets/images/logo.png" alt="logo image" />
+          odin
+        </div>
+        <div class="photo-credits">
+          <p>
+            Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on
+            <a href="https://unsplash.com/">Unsplash</a>
+          </p>
+        </div>
+      </aside>
+      <div class="form-container">
+        <h3>This page has a form that features validation and follows a mock design.</h3>
+
+        <!-- <form action="http://example.com/api/signup" method="post"> -->
+        <form action="http://example.com/api/signup" method="post">
+          <h3>Let's do this!</h3>
+          <div class="form-content">
+            <div>
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div>
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email"/>
+            </div>
+            <div>
+              <label for="phone_number">Phone Number</label>
+              <input type="text" id="phone_number" name="phone_number" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input class="invalid" type="password" id="password" name="password" />
+              <p class="validation-message">Passwords do not match</p>
+            </div>
+            <div>
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                class="invalid"
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="form-content-outside">
+          <div>
+            <button type="submit">Create Account</button>
+          </div>
+          <p>Already have an account? <a href="http://example.com/login">Log In</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
