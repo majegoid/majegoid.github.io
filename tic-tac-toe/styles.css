@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+:root {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 64px 1fr;
+
+  min-height: 100vh;
+
+  background-color: #444;
+}
+
+/* BUTTONS */
+button {
+  display: inline-block;
+
+  width: fit-content;
+  padding: 10px;
+  border: 2px solid #777;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #777;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #555;
+}
+
+.button-green {
+  background-color: #0a0;
+  border-color: #0a0;
+}
+.button-green:hover {
+  background-color: #0c0;
+  border-color: #0c0;
+}
+.button-green:active {
+  background-color: #090;
+}
+
+.button-red {
+  background-color: #a00;
+  border-color: #a00;
+}
+.button-red:hover {
+  background-color: #c00;
+  border-color: #c00;
+}
+.button-red:active {
+  background-color: #900;
+}
+
+.button-blue {
+  background-color: #00a;
+  border-color: #00a;
+}
+.button-blue:hover {
+  background-color: #00c;
+  border-color: #00c;
+}
+.button-blue:active {
+  background-color: #009;
+}
+/* END BUTTONS */
+
+/* CARDS */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  width: 100%;
+  padding: 2rem;
+  border-radius: 0.25rem;
+
+  background-color: #777;
+  color: #fff;
+}
+
+.card > * {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* END CARDS */
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+
+  background-color: #999;
+}
+
+nav > * {
+  display: inline-block;
+}
+/* END NAV */
+
+/* MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  height: 100%;
+  padding: auto;
+}
+/* END MAIN */
+
+/* GAME BOARD */
+.game-board {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  width: 400px;
+  height: 400px;
+}
+
+.inner-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #222;
+}
+
+.inner-board div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 80px;
+  background-color: #666;
+}
+
+.inner-board div:hover {
+  cursor: pointer;
+  background-color: #555;
+}
+
+.x-piece {
+  display: block;
+  position: relative;
+}
+
+.x-piece::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+
+  width: 100px;
+  height: 20px;
+
+  background-color: #222;
+}
+
+.x-piece::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+
+  width: 100px;
+  height: 20px;
+
+  background-color: #222;
+}
+
+.o-piece {
+  display: block;
+  position: relative;
+}
+
+.o-piece::before {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+
+  width: 90px;
+  height: 90px;
+  border: solid 20px #ffaa00;
+  border-radius: 50%;
+}
+/* END GAME BOARD */
+
+/* MESSAGE */
+.game-message {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+  width: 400px;
+  height: 400px;
+}
+
+.game-message > h2 {
+  text-align: center;
+}
+
+.game-message > button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* END MESSAGE */
