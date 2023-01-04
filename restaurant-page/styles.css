@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+:root {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+/* RE-USED STYLES */
+body {
+  display: grid;
+  grid-template-rows: 64px 1fr;
+
+  min-height: 100vh;
+
+  background-color: #000;
+}
+
+div#content {
+  height: 100%;
+  min-width: 400px;
+  width: 50%;
+  margin: 16px 0px;
+}
+
+/* HEADINGS */
+.header {
+  padding: 20px 40px;
+  border-bottom: 1px solid #f0f0f0;
+
+  background-color: #f7f7f7;
+}
+
+.header h2 {
+  margin: 0;
+}
+/* END HEADINGS */
+
+/* BUTTONS */
+button {
+  display: inline-block;
+
+  width: fit-content;
+  padding: 10px;
+  border: 2px solid #777;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #777;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  cursor: pointer;
+  background-color: #555;
+}
+/* END BUTTONS */
+
+/* NAV */
+nav {
+  justify-self: center;
+  height: 100%;
+  min-width: 400px;
+  width: 50%;
+
+  font-size: 22px;
+  color: #fff;
+  background-color: #000;
+}
+
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  height: 100%;
+}
+
+nav > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  height: 100%;
+  width: 100%;
+  transition: background-color 300ms ease-in-out 0s;
+}
+
+nav > ul > li:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+nav > ul > li > span {
+  opacity: 100% !important;
+}
+
+/* END NAV */
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+/* END MAIN */
+
+/* HOME PAGE */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  width: 100%;
+}
+
+.hero > img {
+  filter: brightness(50%);
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+}
+
+.hero-button {
+  border: 1px solid white;
+  width: 200px;
+
+  background-color: transparent;
+  color: white;
+
+  transition: background-color 250ms ease-in-out 0s;
+}
+
+.hero-button:hover {
+  background-color: #555;
+}
+/* END HOME PAGE */
+
+/* MENU PAGE */
+.restaurant-menu {
+  min-height: fit-content;
+  height: 100%;
+
+  background-color: #fff;
+}
+
+.restaurant-menu > h1 {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: #ddd;
+}
+
+.menu-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.restaurant-menu-item {
+  position: relative;
+
+  min-height: fit-content;
+  height: 100%;
+
+  transition: background-color 200ms ease-in-out 0s;
+}
+
+.restaurant-menu-item:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.restaurant-menu-item > img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.restaurant-menu-item > .price {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  font-size: 24px;
+  background-color: lime;
+}
+/* END MENU PAGE */
+
+/* ORDER ONLINE PAGE */
+.restaurant-location {
+  min-height: fit-content;
+  height: 100%;
+
+  background-color: #fff;
+}
+
+.restaurant-location > h1 {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+
+  background-color: #ddd;
+}
+
+.restaurant-location-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.restaurant-location-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  position: relative;
+
+  min-height: fit-content;
+  height: 100%;
+  padding: 1rem;
+
+  transition: background-color 200ms ease-in-out 0s;
+}
+
+.restaurant-location-item:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.restaurant-location button {
+  border: 2px solid black;
+
+  padding: 0.5rem;
+
+  font-size: 1rem;
+  background-color: black;
+}
+
+.restaurant-location button:hover {
+  border: 2px solid #444;
+
+  background-color: #444;
+}
+/* END ORDER ONLINE PAGE */
