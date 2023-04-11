@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/example-personal-portfolio/static/css/main.20419c77.css",
+    "main.js": "/example-personal-portfolio/static/js/main.9086e298.js",
+    "static/media/portrait1.jpg": "/example-personal-portfolio/static/media/portrait1.d1b40b4e093e4e7c9069.jpg",
+    "static/media/project1.jpg": "/example-personal-portfolio/static/media/project1.90ede46f6317d30c03ca.jpg",
+    "static/media/footer.jpg": "/example-personal-portfolio/static/media/footer.20269a57a42dd3ce2ffc.jpg",
+    "static/media/project6.jpg": "/example-personal-portfolio/static/media/project6.86a5c5a6b4c75adfbb35.jpg",
+    "static/media/project3.jpg": "/example-personal-portfolio/static/media/project3.18754ac9a7749beab235.jpg",
+    "static/media/project5.jpg": "/example-personal-portfolio/static/media/project5.5ba307fca46cace3a023.jpg",
+    "static/media/project2.jpg": "/example-personal-portfolio/static/media/project2.f7b12935d6e19fa80fba.jpg",
+    "static/media/project4.jpg": "/example-personal-portfolio/static/media/project4.e0275504f9647ee98882.jpg",
+    "static/media/sample-project.jpg": "/example-personal-portfolio/static/media/sample-project.21f164b40981b3559cb3.jpg",
+    "index.html": "/example-personal-portfolio/index.html",
+    "static/media/phone-outline.svg": "/example-personal-portfolio/static/media/phone-outline.04d357205b0858045638490d9afb7586.svg",
+    "static/media/email-outline.svg": "/example-personal-portfolio/static/media/email-outline.ffe24abaeb56c6af70c15d099f4e98f7.svg",
+    "static/media/open-in-new.svg": "/example-personal-portfolio/static/media/open-in-new.3ede19ed228086e87d899cfdb6684d58.svg",
+    "main.20419c77.css.map": "/example-personal-portfolio/static/css/main.20419c77.css.map",
+    "main.9086e298.js.map": "/example-personal-portfolio/static/js/main.9086e298.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20419c77.css",
+    "static/js/main.9086e298.js"
+  ]
+}
