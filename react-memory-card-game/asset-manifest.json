@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-memory-card-game/static/css/main.224d04ea.css",
+    "main.js": "/react-memory-card-game/static/js/main.7634a194.js",
+    "static/media/24px.svg": "/react-memory-card-game/static/media/24px.73f1ca14f616a81fdc87ffae50db9188.svg",
+    "index.html": "/react-memory-card-game/index.html",
+    "main.224d04ea.css.map": "/react-memory-card-game/static/css/main.224d04ea.css.map",
+    "main.7634a194.js.map": "/react-memory-card-game/static/js/main.7634a194.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.224d04ea.css",
+    "static/js/main.7634a194.js"
+  ]
+}
